@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Mathematics PhD student at Radboud University Nijmegen,
+doing reasearch into computability theory under the
+supervision of Dr. Sebastiaan Terwijn.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Interested in constructive mathematics, type theory,
+programming languages, tea, books, history, Lojban, go.
