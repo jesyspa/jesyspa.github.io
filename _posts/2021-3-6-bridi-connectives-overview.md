@@ -4,12 +4,14 @@ title: bridi connectives in Lojban
 ---
 
 I'm currently learning Lojban and one topic that has given
-me some trouble have been connectives, especially between .
+me some trouble have been connectives, especially between
+bridi.
 By writing this post I'd like to gather all my understanding
-of the grammar of Lojban connectives in one place.  The
-system I'm working in is CLL extended with the [simplified
-connective system][1] by selpahi; all further deviations are
-mistakes on my part.
+of the grammar of Lojban connectives in one place.
+See my post on [my bankle][0] for details on how my language
+deviates from CLL Lojban.
+If any of this deviates more than described there, please
+let me know!
 
 Throughout the post I'll use X and Y to denote arbitrary
 bridi.
