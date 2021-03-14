@@ -155,11 +155,14 @@ respectively.
 
 ### Experimental style: {je gi _X_ gi _Y_}
 
+**Note:** This is not yet explicitly in [my bankle][0] but I'm
+thinking of adding it.
+
 Another way of writing forethought connectives is by putting
 the connective before a {gi}.  In the CLL, this is highly
-restricted—you can only do it with JOI.  However, if it's
-allowed, it's great for modals and tenses since you don't
-need the {bo}:
+restricted—you can only do it with JOI.  However, this may
+be worth adopting as since you don't need the {bo} for
+modals and tenses this way:
 
 > ki'u gi _X_ gi _Y_
 >
@@ -176,10 +179,8 @@ Which does this parse as?
 >
 > _X_ pu du'a (vu'a gi _Y_ gi _Z_)
 
-Note that for this to be valid at all, _Y_ and _Z_ need to be
-sumti, not bridi.  My solution here is to not use this style
-in a tense or modal, but it's worth figuring out more
-properly. :)
+The natural solution seems to be (a) eat up as many of the
+cmavo as possible and (b) in these cases, avoid this style.
 
 ## Summary
 
@@ -204,7 +205,7 @@ aren't legal!
 
 .ui ba tavla co'o
 
-[0]: https://vlasisku.lojban.org/bankle
+[0]: ../lo-mi-bankle
 [1]: http://selpahi.weebly.com/lojban/how-to-substantially-simplify-the-lojban-connective-system-my-connective-system
 [2]: https://wiki.lojban.io/New_Sentence_Links
 [3]: https://discord.com/invite/dGP5A6Fpj7
