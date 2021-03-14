@@ -115,7 +115,10 @@ bridi does not need to be wrapped in an abstraction;
 however, it is also not quite clear to me whether it is
 being claimed.
 
-### New style: {ga je _X_ gi _Y_}
+Thanks to la ziren for feedback on this section, in
+particular on the ambiguity of the experimental style!
+
+### selpa'i style: {ga je _X_ gi _Y_}
 
 In the [simplified connective system][1], forethought
 connectives can all be made using the given form, and
@@ -131,18 +134,52 @@ As far as I can tell, the anchoring point for the {bu} is
 _X_, not _Y_, so in this case _Y_ is said to happen before
 _X_ does.
 
-### Old style: {je gi _X_ gi _Y_}
+An interesting question is what happens when you chain
+these:
+
+> ga je _X_ gi _Y_ gi _Z_
+
+is valid and means "_X_, _Y_, and _Z_".
+
+The meanings of
+
+> ga pu bo _X_ gi _Y_ gi _Z_
+
+and
+
+> ga ki'u bo _X_ gi _Y_ gi _Z_
+
+are unclear.  Possible readings are "before _X_, _Y_, and before
+that, _Z_" and "because _X_, _Y_, and because of that, _Z_"
+respectively.
+
+### Experimental style: {je gi _X_ gi _Y_}
 
 Another way of writing forethought connectives is by putting
 the connective before a {gi}.  In the CLL, this is highly
-restricted—you can only do it with JOI.  However, it's
-great for modals and tenses since you don't need the {bo}:
+restricted—you can only do it with JOI.  However, if it's
+allowed, it's great for modals and tenses since you don't
+need the {bo}:
 
 > ki'u gi _X_ gi _Y_
 >
 > pu gi _X_ gi _Y_
 
-**Note:** Thanks to la ziren for clarifying this bit!
+The issue you get is that it's not all that easy to tell
+how much is part of the connective.  Consider:
+
+> _X_ pu du'a vu'a gi _Y_ gi _Z_
+
+Which does this parse as?
+
+> _X_ pu (du'a vu'a gi _Y_ gi _Z_)
+>
+> _X_ pu du'a (vu'a gi _Y_ gi _Z_)
+
+Note that for this to be valid at all, _Y_ and _Z_ need to be
+sumti, not bridi.  My solution here is to not use this style
+in a tense or modal, but it's worth figuring out more
+properly. :)
 
 ## Summary
 
