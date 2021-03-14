@@ -31,8 +31,8 @@ for explaining all this to me.  All mistakes are mine.
 
 The simplest way to connect two bridi with a tense or a
 modal is to wrap one of them into an abstraction and then
-put them together.  If you'd like to say that _X_ is caused
-by _Y_, for example, you can say
+put them together.  If you'd like to say that _X_ happens
+with justification _Y_, for example, you can say
 
 > _X_ ki'u lo nu _Y_
 
