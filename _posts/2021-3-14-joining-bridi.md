@@ -134,16 +134,15 @@ _X_ does.
 ### Old style: {je gi _X_ gi _Y_}
 
 Another way of writing forethought connectives is by putting
-the connective before a {gi}.  It's not clear whether this
-is allowed for logical connectives; this way comes from the
-CLL, where there were stricter distinctions, and I'm not sure
-allowing {je gi _X_ gi _Y_} is unambiguous.  However, this
-is great for modals and tenses since you don't need the
-{bo}:
+the connective before a {gi}.  In the CLL, this is highly
+restricted—you can only do it with JOI.  However, it's
+great for modals and tenses since you don't need the {bo}:
 
 > ki'u gi _X_ gi _Y_
 >
 > pu gi _X_ gi _Y_
+
+**Note:** Thanks to la ziren for clarifying this bit!
 
 ## Summary
 
