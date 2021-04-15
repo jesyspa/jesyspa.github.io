@@ -11,6 +11,7 @@ changes.  At the moment, the changes I'm aware of using are:
 1. [xorlo][2]
 2. [Selpahi's simplified connectives system][3]
 3. [.ajbo / New sentence links][4]
+4. {jo} is "if", {jo'o} is "iff"
 
 If you see me using a modification that isn't on here,
 please let me know!  Either I'm making a mistake and then
