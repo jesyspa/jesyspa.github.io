@@ -1,6 +1,6 @@
 ---
 layout: post
-title: lo xirno'i jo'u lo nolse'u
+title: loi xirno'i jo'u loi nolse'u
 ---
 
 I found that [Raymond Smullyan][0]'s [Knights and Knaves][1]
