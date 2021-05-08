@@ -99,8 +99,8 @@ multiple variables.  Note that the order of variables is
 supposed to be clear from context.
 
 1. Weakening (places): Given _A'_ a subset of _A_,
-   `forall x.  exists y. Selbri[s, n, A'](x, y) -> Selbri[s,
-   n, A](x)`.
+   `forall x.  (exists y. Selbri[s, n, A'](x, y)) ->
+   Selbri[s, n, A](x)`.
 2. Weakening (variables): For every _n'_ >= _n_, `forall x.
    exists y. Selbri[s, n', A](x, y) <-> Selbri[s, n, A](x)`.
 3. Weakening (sumti): for every _n'_ >= _n_ >= |_FV(a)_|,
