@@ -158,7 +158,9 @@ First of all: once again, this is a back-of-the-napkin
 attempt that should not be taken all too seriously.  I think
 that first of all, a lot more effort needs to go into
 checking how this works out for common sentences and making
-sure there are no unreasonable consequences.
+sure there are no unreasonable consequences.  This is also a
+purely positive fragment: handling {no} as a quantifier and
+negation in general are important further steps.
 
 However, that said, I do think there's something promising
 to this approach.  It seems to me like the connective {jo'u}
