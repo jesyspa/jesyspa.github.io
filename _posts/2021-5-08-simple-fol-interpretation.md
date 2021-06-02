@@ -65,22 +65,24 @@ available for use in the formula.  Note that constants are
 simply nullary functions; we will thus not distinguish
 between the two.
 
-Given a selbri _s_, let _U(s)_ be the set of unfilled
-places.  Note that given selbri _s_ and _t_, _U(s {ja/je/jo}
-t)_ is the intersection of _U(s)_ and _U(t)_.  Let _FV(s)_
-be the set of free variables of _s_.
+Given a selbri $$s$$, let $$U(s)$$ be the set of unfilled
+places.  Note that given selbri $$s$$ and $$t$$,
+$$U(\text{$s$
+\{ja/je/jo\} $t$})$$ is the intersection of $$U(s)$$ and
+$$U(t)$$.  Let $$FV(s)$$ be the set of free variables of
+$$s$$.
 
 The signature we use is as follows:
 
-1. For every selbri _s_ with at most _n_ free variables
-   (i.e. _n_ >= |_FV(s)_|) and
-   every subset _A_ of _U(s)_, `Selbri[s, n, A]` is a
-   relation symbol with arity _n_ + |_A_|.
-2. For every sumti _a_ with at most _n_ free variables
-   `Sumti[a, n]` is a function symbol with arity _n_.
+1. For every selbri $$s$$ with at most $$n$$ free variables
+   (i.e. $$n \ge |FV(s)|$$) and
+   every subset $$A$$ of $$U(s)$$, `Selbri[s, n, A]` is a
+   relation symbol with arity $$n + |A|$$.
+2. For every sumti $$a$$ with at most $$n$$ free variables
+   `Sumti[a, n]` is a function symbol with arity $$n$$.
 
 With these in place, we can set out the interpretation: a
-bridi is encoded as a selbri _s_, and then interpreted as a
+bridi is encoded as a selbri $$s$$, and then interpreted as a
 sequence of quantifiers followed by `Selbri[s, n, {}](x, y,
 ...)`.  The quantifiers are interpreted in the order that
 they would usually be as per the CLL.
@@ -91,35 +93,32 @@ With the signature in place, we need to enumerate the set of
 assumptions that we take as our theory, which will restrict
 what interpretations are valid.
 
-The rules are as follows.  We let _s_ and _t_ range over
-selbri, and _a_ range over sumti.  _A_ (resp. _B_) is a subset of
-_U(s)_ (resp. _U(t)_) and _n_ (resp. _m_) is at least
-|_FV(s)_| (resp. |_FV(t)_|).  Quantifiers may range over
+The rules are as follows.  We let $$s$$ and $$t$$ range over
+selbri, and $$a$$ range over sumti.  $$A$$ (resp. $$B$$) is a subset of
+$$U(s)$$ (resp. $$U(t)$$) and $$n$$ (resp. $$m$$) is at least
+$$|FV(s)|$$ (resp. $$|FV(t)|$$).  Quantifiers may range over
 multiple variables.  Note that the order of variables is
 supposed to be clear from context.
 
-1. Weakening (places): Given _A'_ a subset of _A_,
+1. Weakening (places): Given $$A'$$ a subset of $$A$$,
    `forall x.  (exists y. Selbri[s, n, A'](x, y)) ->
    Selbri[s, n, A](x)`.
-2. Weakening (variables): For every _n'_ >= _n_, `forall x.
+2. Weakening (variables): For every $$n' \ge n$$, `forall x.
    exists y. Selbri[s, n', A](x, y) <-> Selbri[s, n, A](x)`.
-3. Weakening (sumti): for every _n'_ >= _n_ >= |_FV(a)_|,
+3. Weakening (sumti): for every $$n' \ge n \ge |FV(a)|$$,
    `forall x.  Sumti[a, n'](x) = Sumti[a, n](x)`.
-4. Disjunction: Letting _C_ be _A_ intersect _B_ and _k_ be
-   the maximum of _n_ and _m_, `forall x. Selbri[s ja t, k,
+4. Disjunction: If $$C = A \cap B$$ and $$k = \max\{n, m\}$$, `forall x. Selbri[s ja t, k,
    C](x) <-> Selbri[s, k, C](x) v Selbri[t, k, C](x)`.
-5. Conjunction: Letting _C_ be _A_ intersect _B_ and _k_ be
-   the maximum of _n_ and _m_, `forall x. Selbri[s je t, k,
+5. Conjunction: If $$C = A \cap B$$ and $$k = \max\{n, m\}$$,  `forall x. Selbri[s je t, k,
    C](x) <-> Selbri[s, k, C](x) ^ Selbri[t, k, C](x)`.
-6. Implication: Letting _C_ be _A_ intersect _B_ and _k_ be
-   the maximum of _n_ and _m_, `forall x. Selbri[s jo t, k,
+6. Implication: If $$C = A \cap B$$ and $$k = \max\{n, m\}$$, `forall x. Selbri[s jo t, k,
    C](x) <-> (Selbri[s, k, C](x) -> Selbri[t, k, C](x))`.
 7. Negation: `forall x. Selbri[na s, n, A](x) <-> not
    Selbri[s, n, A](x)`.
-8. Application: If `tag` is not in _A_, then
+8. Application: If `tag` is not in $$A$$, then
    `forall x. forall y. Selbri[s tag a, n, A](x, y) <->
    Selbri[s, n, A union {tag}](x, y, Sumti[a, n](x))`.
-9. Lo-Consistency: If `tag` is in _A_, `forall x. forall y.
+9. Lo-Consistency: If `tag` is in $$A$$, `forall x. forall y.
    (exists z. Selbri[s, n, A](x, y, z)) <-> Selbri[s, n,
    A](x, y, tag: Sumti[lo tag s, n](x))`.
 
